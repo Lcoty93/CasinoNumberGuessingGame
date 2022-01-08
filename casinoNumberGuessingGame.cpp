@@ -21,7 +21,7 @@ int main()
 	bool choice;
 
 	srand(time(0)); //seeds the function srand() to have a different number everytime
-	dice = rand() % 10 + 1;
+	
 
 	cout << "\t==========WELCOME TO CASINO WORLD==========" << endl;
 	cout << "\tEnter your name: ";
@@ -42,6 +42,7 @@ int main()
 		//Get Players betting balance
 		do
 		{
+			dice = rand() % 10 + 1; // Moved into the do while loop so it runs this everytime so it isn't the same number
 			cout << playerName << ", enter amount to bet: $";
 			cin >> bettingAmount;
 			if (bettingAmount > balance)
