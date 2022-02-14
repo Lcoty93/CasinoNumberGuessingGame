@@ -64,8 +64,7 @@ int main()
 		if (dice == guess)
 		{
 			cout << "You are in luck!! You have won!" << endl;
-			bettingAmount * 10;
-			balance += bettingAmount;
+			balance += bettingAmount * 10;
 			cout << "Your new balance is: $" << balance << endl;
 		}
 		else
